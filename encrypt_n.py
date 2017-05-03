@@ -44,7 +44,7 @@ def caesar_cipher_n(astring, n=13):
     return nw_str
 
 
-print(caesar_cipher_n('abcde', 2))
+print(caesar_cipher_n('abcde', 0))
 print(caesar_cipher_n('nopqr', 1))
 print(caesar_cipher_n(caesar_cipher_n('since rot thirteen is symmetric you should see this message')))
-print(caesar_cipher_n('This one can work with any string, SUCH AS !, ?, 90... ', 2))
+print(caesar_cipher_n('This function only encrypt letters, the rest remain the same, SUCH AS @_@, :),2333, 6666... ', 2))
