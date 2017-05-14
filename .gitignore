@@ -90,3 +90,6 @@ ENV/
 
 #add later
 .idea
+unresoved.md
+TODO.md
+.vscode
