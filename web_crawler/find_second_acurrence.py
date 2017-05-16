@@ -3,6 +3,7 @@ Find the second accurrence of substring in another string.
 
 '''
 
+
 def find_second_sub(sub, aString):
     '''
     :param sub: a string 
