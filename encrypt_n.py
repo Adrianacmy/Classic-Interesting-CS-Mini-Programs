@@ -9,23 +9,20 @@ function should return a string that is the encrypted version of the message.
 # boundaries:( A: 65   Z: 90  a: 97  z:122)
 
 import string
-'abc'.re
 
 
-def move_n(s, n):
-    ''' s : a string with only letters
+
+def move_n(achar, n):
+    ''' achar : a character
         n :  any integer
         return a new string with after n move
     '''
-    s_ord = ord(s)
-
-    # only move around upper case or lowercase
-    if s_ord <= ord('z') and s_ord >= ord('a'):
-        nw_ord = s_ord + n - ord('a')
-        nw_char = chr(nw_ord % 26 + ord('a'))
+    ord_chr = ord(achar)
+ 
+    if ord_chr <= ord('z') and ord_chr >= ord('a'):
+        nw_char  = chr((ord_chr + n - ord('a')) % 26 + ord('a'))
     else:
-        nw_ord = s_ord + n - ord('A')
-        nw_char = chr(nw_ord % 26 + ord('A'))
+        nw_char = chr((ord_chr + n - ord('A')) % 26 + ord('A'))
 
     return nw_char
 
@@ -33,11 +30,9 @@ def move_n(s, n):
 def caesar_cipher_n(astring, n=13):
     '''return a string after n move, if n is not supplied, default is 13'''
 
-    letters = string.ascii_letters
     nw_str = ''
-
     for achar in astring:
-        if achar in letters:
+        if achar.isalpha():
             nw_str += move_n(achar, n)
         else:
             nw_str += achar

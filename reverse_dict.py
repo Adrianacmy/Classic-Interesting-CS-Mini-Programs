@@ -30,9 +30,9 @@ for some keys.
 def convert_to_simple_list(lst, nw_list=[]):
     '''
     Convert a muti-dimentinal list to one dimention list.
-        lst: any list 
-        nw_list: one dimentiona list, could start as empty 
-        return: a one dimention list
+    lst: any list 
+    nw_list: one dimentiona list, could start as empty 
+    return: a one dimention list
     '''
     for a in lst:
         if type(a) == list:
@@ -76,7 +76,7 @@ def reverse_dict(d):
 
 
 def main():
-    d = {1: 'a', 4: ['abc', 'egf'], 5: '', 6: 'abc', 2:[1, 2, 3, [1, 2]], 8: ['', 2]}
+    d = {1: 'a', 4: ['abc', 'egf'], 5: '',(1, 6): 'abc', 2:[1, 2, 3, [1, 2]], 8: ['', 2]}
     print(reverse_dict(d))
 
 
