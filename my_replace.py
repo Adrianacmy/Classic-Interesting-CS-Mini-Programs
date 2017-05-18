@@ -1,43 +1,5 @@
-
 '''
-my replace
-'''
-
-def replace_one(aString, old, new, start, nw_str):
-
-    idx = aString.find(old)
-
-    if idx != -1:
-        nw_str = aString[:idx] + new + aString[idx + len(old):]
-    else:
-        nw_str = aString
-
-    return [nw_str, idx+start]
-
-
-def replace_all(aString, old, new, start = 0):
-
-    nw_str = ''
-
-    while aString[start:]:
-        nw_str, idx = replace_one(aString, old, new, start, nw_str)
-        start = idx + len(old)
-        aString = nw_str
-
-    return nw_str
-
-
-
-start = 0
-nw_str = ''
-print(replace_one('banana', 'an', '', start, nw_str))
-print(replace_all('banana', 'an', 'xy'))
-print(replace_all('apple', 'pp', ''))
-
-
-########################################################################################################################
-'''
-a much cleaner way to replace
+one way to replace
 '''
 
 def get_next_target(s, old):
@@ -75,3 +37,44 @@ s1 = 'I love spom! Spom is my favorite food. Spom, spom, spom, yum!'
 print(my_replace(s2, 'i', 'I'))
 print(my_replace(s1, 'om', 'am'))
 print(my_replace(s1, 'o', 'a'))
+
+######################################################################################
+
+
+'''
+another way to replace
+'''
+
+def replace_one(aString, old, new, start, nw_str):
+
+    idx = aString.find(old)
+
+    if idx != -1:
+        nw_str = aString[:idx] + new + aString[idx + len(old):]
+    else:
+        nw_str = aString
+
+    return [nw_str, idx+start]
+
+
+def replace_all(aString, old, new, start = 0):
+
+    nw_str = ''
+
+    while aString[start:]:
+        nw_str, idx = replace_one(aString, old, new, start, nw_str)
+        start = idx + len(old)
+        aString = nw_str
+
+    return nw_str
+
+
+
+start = 0
+nw_str = ''
+print(replace_one('banana', 'an', '', start, nw_str))
+print(replace_all('banana', 'an', 'xy'))
+print(replace_all('apple', 'pp', ''))
+
+
+########################################################################################################################
