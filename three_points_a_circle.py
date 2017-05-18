@@ -13,7 +13,6 @@ I started with the solution try to handle all slop doesn't exist exception, end
 up horrible and lost in the control flow, lunkily a great fellow remanded me 
 to ignore the slop unexist one,since there is always only one side may don't have slop
 in a triangle. Yeah, it is a great clue and thanks dude :) 
-
 """
 
 

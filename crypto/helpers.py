@@ -17,8 +17,8 @@ def alphabet_position(achar):
 def rotate_character(char, rot):
     '''
     :param char: a string of length 1
-    :param rot: rot could be negative integer here, but during encryption, the user input has to be digit, since 
-            I used isdigit for validation.
+    :param rot: rot could be negative integer here, but during encryption, the 
+            user input has to be digit, since I used isdigit for validation.
     :return: return the char after rotating rot 
     '''
 
