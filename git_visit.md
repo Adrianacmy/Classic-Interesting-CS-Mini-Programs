@@ -40,3 +40,19 @@ git config --global core.editor "atom --wait"
 - git branch -d algo: have to switch to other branch and then delete algo
 - git checkout -b algo master: create and switch to algo whick got the same
         location as master
+- git log --oneline -- decorate -- graph --all
+
+- git reset --hard HEAD^ : undo last merge on the wrong branch
+
+- merge conflict:
+    <<<<<<< HEAD everything below this line (until the next indicator) shows 
+        you what's on the current branch
+    ||||||| merged common ancestors everything below this line (until the next
+         indicator) shows you what the original lines were
+    ======= is the end of the original lines, everything that follows (until 
+        the next indicator) is what's on the branch that's being merged in
+    >>>>>>> heading-update is the ending indicator of what's on the branch
+         that's being merged in (in this case, the heading-update branch)
+
+- git commit --amend
+- git revert SHA 
