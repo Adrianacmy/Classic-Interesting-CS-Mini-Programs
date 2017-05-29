@@ -23,11 +23,10 @@ def deep_count(p):
         
     return sum 
 
-# print(deep_count([1, 2, 3]))
-#>>> 3
+
 
 # The empty list still counts as an element of the outer list
-# print(deep_count([1, [], 3])) 
+print(deep_count([1, [], 3])) 
 #>>> 3 
 
 print(deep_count([1, [1, 2, [3, 4]]]))
