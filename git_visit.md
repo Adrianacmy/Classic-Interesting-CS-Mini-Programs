@@ -6,6 +6,7 @@
 - git log --p : show the acctual changes, it  is the most detailed
 - git show SHA
 - git log -p SHA
+- git reflog ?
 
 git config --global core.editor "atom --wait"
 
@@ -54,5 +55,11 @@ git config --global core.editor "atom --wait"
     >>>>>>> heading-update is the ending indicator of what's on the branch
          that's being merged in (in this case, the heading-update branch)
 
-- git commit --amend
-- git revert SHA 
+- git commit --amend: fix the most recent commit
+- git commit --amend --no-edit: make amendment without changing the commit msg
+- git revert SHA : undo changes of SHA commit and create a new commit to record
+    the change
+
+
+- git rebase
+- git rebase -i
