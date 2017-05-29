@@ -56,4 +56,3 @@ git config --global core.editor "atom --wait"
 
 - git commit --amend
 - git revert SHA 
-    test
