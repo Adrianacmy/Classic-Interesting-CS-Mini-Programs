@@ -63,3 +63,13 @@ git config --global core.editor "atom --wait"
 
 - git rebase
 - git rebase -i
+- git reset --soft|--hard|--mixed HEAD
+
+ ~ – indicates the first parent commit
+ ^ – indicates the parent commit
+
+    The main difference between the ^ and the ~ is when a commit is created from a
+    merge. A merge commit has two parents. With a merge commit, the ^ reference 
+    is used to indicate the first parent of the commit while ^2 indicates the 
+    second parent. The first parent is the branch you were on when you ran git 
+    merge while the second parent is the branch that was merged in.
