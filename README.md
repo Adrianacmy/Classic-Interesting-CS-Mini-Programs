@@ -10,4 +10,4 @@ This repo contains all my experiment codes while playing with libs.
 ## Third party packages
 
 - [BeautifulSoup](./besoup/) [Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-- [Numpy](./numpy) [Documentation](https://docs.scipy.org/doc/numpy-1.13.0/reference/index.html#reference)  
+- [Numpy](./Numpy) [Documentation](https://docs.scipy.org/doc/numpy-1.13.0/reference/index.html#reference)  
