@@ -201,3 +201,33 @@ isinstance(iter(lst), Iterator) # True
 ```
 
 ## Closure
+
+## 多任務: 輪詢，優先度調用
+
+- 併發：　任務多餘內核書
+- 並行: 任務　<= 內核數
+- 全局變量在多個進程中不共享
+
+- 進程：　運行中的程序
+```
+ret = os.fork() #create a child process, 執行順序不確定
+if ret > 0:
+    print('fu')
+else:
+    print('zi')
+
+os.getpid()
+os.getppid() # parent process id
+
+
+import os
+os.fork()
+os.fork()
+os.fork()
+# created 8 process in total after above three lines
+
+# fork 炸彈
+while True:
+os.fork()
+
+```
