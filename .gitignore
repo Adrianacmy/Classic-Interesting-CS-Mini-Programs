@@ -95,3 +95,4 @@ TODO.md
 .vscode
 sketch*.py
 class_circle.py
+.pytest_cache/
