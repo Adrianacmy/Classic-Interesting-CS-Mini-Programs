@@ -1,6 +1,8 @@
 '''
 Process創建的子進程都結束後，　主進程纔會運行
 
+pid 1 will handle all orphan process
+
  https://docs.python.org/3.6/library/multiprocessing.html
 
 進程間默認沒關係
