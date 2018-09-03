@@ -5,7 +5,6 @@ python 27
 
 
 from socket import *
-# from multiprocessing import Process
 from threading import Thread
 
 
