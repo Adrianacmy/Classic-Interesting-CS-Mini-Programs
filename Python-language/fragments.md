@@ -6,10 +6,6 @@
 - `a = 100, b = 100, a is b`
 
 ```python
-if n >= -5 and n <= 127:
-    a = n
-    b = n
-    a is b # True
 
 if m >= -5:
     a, b = 789, 789
